@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProgramaPrincipal
 {
-    class Class1
+    class Competidor
     {
         public string nome;
         public double t1;
