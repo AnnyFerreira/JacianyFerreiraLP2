@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace ProgramaPrincipal
 {
-    class Competidor
-    { 
+    class Class1
+    {
         public string nome;
         public double t1;
         public double t2;
@@ -21,6 +21,5 @@ namespace ConsoleApplication1
                 return t1 + t3;
             else if (t3 > t2 && t3 > t1)
                 return t2 + t1;
-        }
     }
 }
