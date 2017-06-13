@@ -16,25 +16,31 @@ namespace ProgramaPrincipal
             n = Convert.ToInt32(Console.ReadLine());
 
             Competidor[] competidores = new Competidor[n];
+             // Cria um objeto Competidor (Instanciação). Instância = objeto.
 
             for (i = 0; i <= n; i++)
             {
                 Competidor corredor = new Competidor(); // Cria um objeto Competidor (Instanciação). Instância = objeto.
-
                 Console.WriteLine("Informe o nome");
                 corredor.nome = Console.ReadLine();
-
+            }
+            for (i = 0; i <= n; i++)
+            {
                 Console.WriteLine("Informe o t1");
                 corredor.t1 = Convert.ToDouble(Console.ReadLine());
-                
+            }    
+            for (i = 0; i <= n; i++)
+            {  
                 Console.WriteLine("Informe o t2");
                 corredor.t2 = Convert.ToDouble(Console.ReadLine());
-
+            }
+            for (i = 0; i <= n; i++) 
+            { 
                 Console.WriteLine("Informe o t3");
                 corredor.t3 = Convert.ToDouble(Console.ReadLine());
-
-                competidores[i] = corredor;
             }
+                competidores[i] = corredor;
+            
             Console.WriteLine();
         }
     }
