@@ -21,5 +21,21 @@ namespace _5___Produtos
         {
             get { return quantidade; }
         }
+        public double Preco { get; set; }
+
+        public void Repor(int repor)
+        {
+            this.quatidade += repor;
+        }
+
+        public Produto(int id, string nome, int preco)
+        {
+            this.id = id;
+            this.Nome = nome;
+            this.Preco = preco;
+            this.quatidade = 0;
+        }
     }
+
+
 }

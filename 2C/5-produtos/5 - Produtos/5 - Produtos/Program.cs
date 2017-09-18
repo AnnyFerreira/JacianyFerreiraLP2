@@ -10,9 +10,8 @@ namespace _5___Produtos
     {
         static void Main(string[] args)
         {
-            Produto prod = new Produto();
-            prod.nome = "Colgate ";
-            prod.preco = 3.79;
+            Produto prod = new Produto(1, "colgate total 12", 2);
+            prod.Repor(200);
             
         }
     }
