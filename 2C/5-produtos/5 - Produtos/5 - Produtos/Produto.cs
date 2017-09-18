@@ -27,6 +27,10 @@ namespace _5___Produtos
         {
             this.quatidade += repor;
         }
+        public void Retirar(int retirar)
+        {
+            this.quatidade -= retirar;
+        }
 
         public Produto(int id, string nome, int preco)
         {
