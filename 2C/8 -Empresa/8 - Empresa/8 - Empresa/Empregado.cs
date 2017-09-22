@@ -12,8 +12,8 @@ namespace _8___Empresa
         public string Entrada { get; set; }
         public Gerente gente { get; set; }
 
-            public Empregado(int reg, string data) 
-            {
+            public Empregado(int reg, string data) : base(reg) // inicialização dos atributos da classe pai 
+        {
                 this.Entrada = data;
             }
     }

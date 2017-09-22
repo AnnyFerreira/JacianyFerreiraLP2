@@ -11,7 +11,7 @@ namespace _8___Empresa
         public string Setor { get; set; }
         public double Bonus { get; set; }
 
-            public Gerente(int reg, string setor) 
+            public Gerente(int reg, string setor) : base(reg)
             {
                 this.Setor = setor;
             }

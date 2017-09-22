@@ -10,7 +10,7 @@ namespace _8___Empresa
     {
          public string EmpresaMatriz { get; set; }
 
-            public Tercerizado(int reg, string data, string empresa) 
+            public Tercerizado(int reg, string data, string empresa) : base(reg, data)
             {
                 this.EmpresaMatriz = empresa;
             }
