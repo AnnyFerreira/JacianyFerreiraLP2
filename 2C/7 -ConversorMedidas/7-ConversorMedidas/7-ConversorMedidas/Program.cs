@@ -26,28 +26,30 @@ namespace _7_ConversorMedidas
             {
                 if (n == 1)
                 {
-                    Conversor.KgParaLb(n);
+                    Console.WriteLine(Conversor.KgParaLb(Convert.ToDouble(Console.ReadLine())));
                 }
                 else if (n == 2)
                 {
-                    Conversor.PolParaPes(n);
+                    Console.WriteLine(Conversor.PolParaPes(Convert.ToDouble(Console.ReadLine())));
                 }
                 else if (n == 3)
                 {
-                    Conversor.MParaPol(n);
+                    Console.WriteLine(Conversor.MParaPol(Convert.ToDouble(Console.ReadLine())));
                 }
                 else if (n == 4)
                 {
-                    Conversor.KmParaM(n);
+                    Console.WriteLine(Conversor.KmParaM(Convert.ToDouble(Console.ReadLine())));
                 }
-                else if ( n == 5)
+                else if (n == 5)
                 {
-                    Conversor.PesParaM(n);
+                    Console.WriteLine(Conversor.PesParaM(Convert.ToDouble(Console.ReadLine())));
                 }
                 else if (n == 6)
                 {
-                    Conversor.GParaKG(n);
+                    Console.WriteLine(Conversor.GParaKG(Convert.ToDouble(Console.ReadLine())));
                 }
+                else
+                    Console.WriteLine("Não foi possível realizar a ação");
 
             }
 
