@@ -6,18 +6,13 @@ using System.Threading.Tasks;
 
 namespace _8___Empresa
 {
-    class Tercerizado 
+    class Tercerizado : Funcionário
     {
-        public string EmpresaMatriz { get; set; }
-        public int Registro { get; set; }
-        public string Nome { get; set; }
-        public double Salario { get; set; }
-        public int CPF { get; set; }
-        public string Email { get; set; }
+         public string EmpresaMatriz { get; set; }
 
-            public Tercerizado(int reg, string data, string empresa, int Registro, string Nome, double Salario, int CPF, string Email) 
-                {
-                    this.EmpresaMatriz = empresa;
-                }
+            public Tercerizado(int reg, string data, string empresa) 
+            {
+                this.EmpresaMatriz = empresa;
+            }
     }
 }
