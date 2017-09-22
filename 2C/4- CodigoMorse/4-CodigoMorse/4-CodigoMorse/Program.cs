@@ -11,17 +11,16 @@ namespace _4_CodigoMorse
         static void Main(string[] args)
         {       
             Mensagem msg = new Mensagem();
-            int n = 1;
+
+            Console.WriteLine("1- Codificar");
+            Console.WriteLine("2- Decodificar");
+            Console.WriteLine("3- Transmitir");
+            Console.WriteLine("0- Sair");
 
             while (n != 0)
+             { 
 
-            {
-                Console.WriteLine("1- Codificar");
-                Console.WriteLine("2- Decodificar");
-                Console.WriteLine("3- Transmitir");
-                Console.WriteLine("0- Sair");
-
-                n = int.Parse(Console.ReadLine());
+               int n = int.Parse(Console.ReadLine());
 
                 if (n != 0)
                 {
@@ -32,7 +31,9 @@ namespace _4_CodigoMorse
                 }
                 else
                     break;
-            }
+             }
+            Console.WriteLine("1 - Codificar\n2 - Decodificar\n3 - Transmitir\n0 - Sair ");
+            n = int.Parse(Console.ReadLine());
         }
     }
 }
